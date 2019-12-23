@@ -1,9 +1,11 @@
-# aws
+
 
 General
  
 For example, if the guest OS is Linux, after hardening your instance you should utilize certificate- based SSHv2 to access the virtual instance, disable remote
-Amazon Web Services – Overview of Security Processes
+
+#Amazon Web Services – Overview of Security Processes
+
 r use ‘sudo’ for privilege escalation. You should generate your own key pairs in order to guarantee that they are unique, and not shared with other customers or with AWS.
 However, getting credentials out to new EC2 instances launched with Auto- Scaling can be challenging for large or elastically scaling fleets. To simplify this process, you can use roles within IAM, so that any new instances launched with a role will be given credentials automatically.
 Amazon Web Services – Overview of Security Processes
