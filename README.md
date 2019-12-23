@@ -1,20 +1,25 @@
-
-
 General
  
 For example, if the guest OS is Linux, after hardening your instance you should utilize certificate- based SSHv2 to access the virtual instance, disable remote
 
-#Amazon Web Services – Overview of Security Processes
+#### Amazon Web Services – Overview of Security Processes
 
 r use ‘sudo’ for privilege escalation. You should generate your own key pairs in order to guarantee that they are unique, and not shared with other customers or with AWS.
+
 However, getting credentials out to new EC2 instances launched with Auto- Scaling can be challenging for large or elastically scaling fleets. To simplify this process, you can use roles within IAM, so that any new instances launched with a role will be given credentials automatically.
-Amazon Web Services – Overview of Security Processes
+
+#### Amazon Web Services – Overview of Security Processes
+
 AWS security credentials with permissions specified by the role will be securely provisioned to the instance and will be made available to your application via the Amazon EC2 Instance Metadata Service.
+
 You can create and attach an additional network interface, known as an elastic network interface (ENI), to any Amazon EC2 instance in your Amazon VPC for a total of two network interfaces per instance.
+
 Amazon Web Services offer 3 different levels of support, which of the below are valid support levels. - Enterprise , Business and Developer. 
+
 info:- Classless Inter-Domain Routing (CIDR) block).
-AWS Setup
-created IAM Roles
+
+#### AWS Setup
+Created IAM Roles
 Created Security Groups ( ec2 and rds)
 created Application LB
 Created s3 bucket
@@ -22,13 +27,19 @@ created cloudfront based on s3
 provisioned rds instances
 point the nd to the application LB. by created Record set
 provision ec2 - set the IAM role - set the user data.
+
 URL rewrite for cloudfront.
 Draw.io  https://www.draw.io/?libs=aws2&splash=0
+
 https://support.draw.io/display/DO/2014/10/06/Using+AWS+2.0+icons+to+create+free+Amazon+architecture+diagrams+in+draw.io
- https://aws.amazon.com/certification/certified-solutions-architect-associate/
+
+https://aws.amazon.com/certification/certified-solutions-architect-associate/
+
 https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate_Feb_2018_%20Exam_Guide_v1.5.2.pd017
+
 https://github.com/agasthik/aws-csa-2017
-AWS History
+
+#### AWS History
 started 2003 Chris Pinkham and Benjamin Black
 SQS Officially launched in 2004
 AWS officially launched in 2006
@@ -40,10 +51,6 @@ AWS 10K Foot Overview
 6 more & 17 more on 2018
 Region is a geographical area. Each region consists of  AZ - AZ is simply Data Center.
 Edge Locations are endpoints for AWS which are used for caching content. Typical this consists - CloudFront, Amazon Content Delivery Network (CDN). Cloud watch is monitoring and cloud trail is logging.
- 
- 
- 
- 
  
  
 
